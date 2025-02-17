@@ -5,5 +5,5 @@
     <solid android:color="@android:color/white" /> <!-- Transparent color for the inner area -->
     <stroke
         android:width="2dp"
-        android:color="@color/purple" /> <!-- Color of the border -->
+        android:color="@color/black" /> <!-- Color of the border -->
 </shape>

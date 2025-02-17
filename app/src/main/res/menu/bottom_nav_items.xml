@@ -4,31 +4,30 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/item_home"
-        android:icon="@drawable/home_e"
-        android:title="Home"
-        app:showAsAction="always|withText"/>
+        android:icon="@drawable/home_selector"
+        android:title="@string/home" />
 
     <item
         android:id="@+id/item_liked"
-        android:icon="@drawable/heart_e"
-        android:title="Saved"
-        app:showAsAction="always|withText"/>
+        android:icon="@drawable/saved_selector"
+        android:title="@string/saved"
+        />
 
     <item
         android:id="@+id/item_qr"
-        android:icon="@drawable/qr_e"
-        android:title="QR"
-        app:showAsAction="always|withText"/>
+        android:icon="@drawable/qr_selector"
+        android:title="@string/qr"
+        />
 
     <item
         android:id="@+id/item_history"
-        android:icon="@drawable/clock_e"
-        android:title="History"
-        app:showAsAction="always|withText"/>
+        android:icon="@drawable/history_selector"
+        android:title="@string/history"
+        />
 
     <item
         android:id="@+id/item_account"
-        android:icon="@drawable/account_e"
-        android:title="Account"
-        app:showAsAction="always|withText" />
+        android:icon="@drawable/account_selector"
+        android:title="@string/account"
+         />
 </menu>

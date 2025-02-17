@@ -6,22 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".activities.LoginActivity">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="Tabs"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tabMode="fixed" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:contentDescription="Content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frame_authorization"
+        android:name="com.example.restaurantapp.fragments.LogInFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

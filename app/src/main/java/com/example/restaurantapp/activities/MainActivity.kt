@@ -2,20 +2,26 @@ package com.example.restaurantapp.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import androidx.annotation.ContentView
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.restaurantapp.R
 import com.example.restaurantapp.databinding.ActivityMainBinding
 import com.example.restaurantapp.fragments.*
+import com.example.restaurantapp.activities.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        setContentView(R.layout.activity_main)
+
         val actionBar: ActionBar? = supportActionBar
 
         if (actionBar != null) {
@@ -23,15 +29,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         replaceFragment(HomeFragment())
-        val intent = Intent(this, ExplanaitionActivity::class.java)
 
-
-        binding.bottomNav.setOnItemSelectedListener { item ->
+        findViewById<BottomNavigationView>(R.id.bottom_nav).setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.item_home -> replaceFragment(HomeFragment())
-                R.id.item_liked -> replaceFragment(LikedFragment())
-                R.id.item_qr -> replaceFragment(AccountDetailFragment())
-                R.id.item_account -> replaceFragment(AccountFragment())
+                R.id.item_liked -> replaceFragment(LikedFragment()) // Replace with LikedFragment if list is not empty
+                R.id.item_qr -> { startActivity(Intent(this, QRScannerActivity::class.java)) }
+                R.id.item_account -> replaceFragment(AccountAuthorizedFragment())
                 R.id.item_history -> replaceFragment(HistoryFragment())
             }
             true

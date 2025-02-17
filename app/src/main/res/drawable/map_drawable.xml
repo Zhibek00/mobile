@@ -6,5 +6,5 @@
     <!-- Apply a color filter to change the color -->
     <bitmap
         android:tint="@color/white"
-        android:src="@drawable/icons8_map_ios_17_96_1" />
+        android:src="@drawable/map" />
 </layer-list>

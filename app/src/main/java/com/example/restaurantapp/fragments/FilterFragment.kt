@@ -9,12 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.activity.SystemBarStyle.Companion.auto
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.restaurantapp.R
-import com.example.restaurantapp.adapters.CustomSpinnerAdapter
-import com.google.android.material.button.MaterialButton
 
 
 class FilterFragment : Fragment() {
@@ -34,9 +33,7 @@ class FilterFragment : Fragment() {
         val btn = viewFragment.findViewById<AppCompatButton>(R.id.distance)
         val btn1 = viewFragment.findViewById<AppCompatButton>(R.id.rating)
 
-        val spinner = setUpSpinner(com.example.restaurantapp.R.id.spinner1, com.example.restaurantapp.R.array.spinner_items1, com.example.restaurantapp.R.drawable.price)
-        val spinner1 = setUpSpinner(com.example.restaurantapp.R.id.spinner2, com.example.restaurantapp.R.array.spinner_items1, R.drawable.cuisines)
-        val spinner2 = setUpSpinner(R.id.spinner3, R.array.spinner_items1, R.drawable.and)
+
 
         val checkedTextView1 = setUpCheckedTextView(R.id.checkedTextView1)
         val checkedTextView2 = setUpCheckedTextView(R.id.checkedTextView2)
@@ -44,14 +41,6 @@ class FilterFragment : Fragment() {
         setCheckedTextViewClickListener(checkedTextView1)
         setCheckedTextViewClickListener(checkedTextView2)
 
-        val frameLayout2 = viewFragment.findViewById<FrameLayout>(R.id.frameLayout2)
-        val frameLayout = viewFragment.findViewById<FrameLayout>(R.id.frameLayout1)
-        val frameLayout3 = viewFragment.findViewById<FrameLayout>(R.id.frameLayout)
-
-
-        val img = viewFragment.findViewById<ImageView>(R.id.img)
-        val img1 = viewFragment.findViewById<ImageView>(R.id.img1)
-        val img2 = viewFragment.findViewById<ImageView>(R.id.img2)
 
 
         val txt = viewFragment.findViewById<TextView>(R.id.txt)
@@ -59,20 +48,10 @@ class FilterFragment : Fragment() {
         val txt2 = viewFragment.findViewById<TextView>(R.id.txt2)
 
         val buttons = mutableListOf<AppCompatButton>()
-        val autoButton = viewFragment.findViewById<AppCompatButton>(R.id.auto)
-        val button1 = viewFragment.findViewById<AppCompatButton>(R.id.btn1)
-        val button2 = viewFragment.findViewById<AppCompatButton>(R.id.btn2)
-        val button3 = viewFragment.findViewById<AppCompatButton>(R.id.btn3)
-        val button4 = viewFragment.findViewById<AppCompatButton>(R.id.btn4)
-        val button5 = viewFragment.findViewById<AppCompatButton>(R.id.btn5)
 
 
-        buttons.add(autoButton)
-        buttons.add(button1)
-        buttons.add(button2)
-        buttons.add(button3)
-        buttons.add(button4)
-        buttons.add(button5)
+
+
 
 
 
@@ -118,17 +97,7 @@ class FilterFragment : Fragment() {
             changeButtonColor(btn1, requireContext())
         }
 
-        frameLayout2.setOnClickListener {
-            handleFrameLayoutClick(frameLayout2, img, txt)
-        }
 
-        frameLayout.setOnClickListener {
-            handleFrameLayoutClick(frameLayout, img1, txt1)
-        }
-
-        frameLayout3.setOnClickListener {
-            handleFrameLayoutClick(frameLayout3, img2, txt2)
-        }
 
         return viewFragment
     }
@@ -157,8 +126,6 @@ class FilterFragment : Fragment() {
     private fun setUpSpinner(spinnerId: Int, itemsArrayId: Int, drawableId: Int): Spinner {
         val spinner = viewFragment.findViewById<Spinner>(spinnerId)
         val items = requireContext().resources.getStringArray(itemsArrayId)
-        val adapter = CustomSpinnerAdapter(requireContext(), drawableId, items)
-        spinner.adapter = adapter
         return spinner
     }
 

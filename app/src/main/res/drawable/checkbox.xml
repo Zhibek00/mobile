@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="@color/white"/> <!-- Set your desired color here -->
-    <stroke
-        android:width="2dp"
-        android:color="@color/green_1" />
-    <size android:width="24dp" android:height="24dp"/> <!-- Set size as needed -->
-</shape>

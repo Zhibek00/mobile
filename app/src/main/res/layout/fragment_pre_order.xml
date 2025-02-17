@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="22dp"
+>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:text="Pre-order"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="19dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your selection:"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Any special request?"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Add special request here..."
+        android:textSize="14sp"
+        android:paddingTop="16dp"
+        android:paddingHorizontal="20dp"
+
+        android:gravity="top"
+        android:layout_height="120dp"
+        android:background="@drawable/border_black"
+        />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:text="Order"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/textView141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        android:text="5585 tg"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Service"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/textView148"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-21dp"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        android:text="5585 tg"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="13dp"
+
+        android:textStyle="bold"
+        android:text="Total"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/textView147"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-35dp"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        android:text="5585 tg"
+        android:textSize="17sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="24dp"
+        android:layout_marginTop="30dp"
+        android:text="Finish pre-order"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/button_shape"/>
+</LinearLayout>

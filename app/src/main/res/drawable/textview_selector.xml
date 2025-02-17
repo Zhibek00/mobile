@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_selected="true" android:drawable="@drawable/line_fat_blue" />
+    <!-- Default state -->
+    <item android:state_selected="false" android:drawable="@drawable/line_3_blue" />
+
+    <item android:drawable="@drawable/line_3_blue" />
+</selector>

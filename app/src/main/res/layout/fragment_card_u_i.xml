@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30dp"
+
+    tools:context=".fragments.CardUIFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Payment" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="22sp"
+        android:text="Cards" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="This is where all your saved credit and debit cards will be." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/card"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="20dp"
+            android:text="Bank" />
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/yellow_card"/>
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="XXXX XXXX XXXX XXXX" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+
+            android:text="00/00" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            android:text="NAME SURNAME" />
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="44dp"
+            android:layout_marginTop="-34dp"
+            android:src="@drawable/circle1"/>
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="-44dp"
+            android:src="@drawable/circle2"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_card_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Card"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

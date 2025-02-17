@@ -25,8 +25,8 @@ class HistoryViewPagerAdapter (fragmentManager: FragmentManager) : FragmentPager
 
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
-            1 -> "Upcoming" // Title for the first tab
-            0 -> "Previous" // Title for the second tab
+            0 -> "Upcoming" // Title for the first tab
+            1 -> "Previous" // Title for the second tab
             else -> null
         }
     }

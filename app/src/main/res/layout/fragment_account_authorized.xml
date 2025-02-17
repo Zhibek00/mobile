@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="30dp"
 
     tools:context=".fragments.AccountAuthorizedFragment"
     android:orientation="vertical">
@@ -15,11 +14,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:textSize="30sp"
-        android:textColor="@color/purple"
+        android:layout_marginHorizontal="30dp"
+
         android:textStyle="bold"
         android:text="Profile"/>
     <FrameLayout
         android:id="@+id/view"
+        android:layout_marginHorizontal="30dp"
+
         android:layout_width="match_parent"
         android:layout_height="95dp"
         >
@@ -29,10 +31,10 @@
             android:layout_gravity="center_vertical"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:src="@drawable/image_109" />
+            android:src="@drawable/account_empty" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="74dp"
@@ -52,22 +54,27 @@
 
     </FrameLayout>
     <FrameLayout
+        android:id="@+id/profile_edit_btn"
         android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_marginHorizontal="30dp"
+
         android:layout_height="60dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/small_rounded"
+        android:backgroundTint="@color/white"
         >
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/account"/>
+            android:layout_marginStart="14dp"
+            android:src="@drawable/account_pr"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="72dp"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:text="Edit Profile">
@@ -75,22 +82,27 @@
     </TextView>
     </FrameLayout>
     <FrameLayout
+        android:id="@+id/payment_btn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="16dp"
+        android:elevation="5dp"
+
         android:background="@drawable/small_rounded"
         >
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/visa"/>
+            android:layout_marginStart="14dp"
+            android:src="@drawable/payment_pr"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="72dp"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:text="Payment">
@@ -98,12 +110,69 @@
         </TextView>
     </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/password_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="16dp"
+        android:elevation="5dp"
+
+        android:background="@drawable/small_rounded"
+        >
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/password_pr"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="72dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Password">
+
+        </TextView>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/help_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="16dp"
+        android:elevation="5dp"
+
+        android:background="@drawable/small_rounded"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/help_pr"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="72dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Help Center">
+
+        </TextView>
+    </FrameLayout>
+
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="130dp"
+        android:id="@+id/log_out_btn"
+        android:layout_width="136dp"
         android:layout_height="44dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="38dp"
         android:layout_gravity="center"
         android:background="@drawable/button_shape"
         android:backgroundTint="@color/purple"

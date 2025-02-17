@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30dp"
+    tools:context=".fragments.CardFragment">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:text="Help Center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="27dp" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title of your problem"
+        android:textSize="16dp"
+
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+
+    <EditText
+        android:id="@+id/title"
+        android:textSize="16sp"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingStart="24dp"
+        android:inputType="text"
+        android:singleLine="true"
+        android:hint="Title of your problem"
+        android:textColorHint="@color/grey_0"
+        android:background="@drawable/border_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+
+    <EditText
+        android:id="@+id/request"
+        android:textSize="16sp"
+        android:maxLength="11"
+        android:paddingStart="24dp"
+        android:inputType="text"
+        android:hint="Your request"
+        android:gravity="top"
+        android:paddingTop="8dp"
+        android:textColorHint="@color/grey_0"
+        android:background="@drawable/border_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

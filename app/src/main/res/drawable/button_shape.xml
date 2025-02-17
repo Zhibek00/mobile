@@ -6,7 +6,7 @@
     <!-- Change the color as needed -->
     <stroke
         android:width="2dp"
-        android:color="@color/purple" />
+        android:color="@color/white" />
     <!-- Set desired button color -->
 
 

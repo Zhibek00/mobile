@@ -8,23 +8,20 @@
     <item>
         <shape
             android:shape="rectangle">
-            <corners android:radius="24dp" />
-
-            <gradient
-                android:type="sweep"
-                android:gradientRadius="100%p"
-                android:centerX="0.5"
-                android:centerY="0.5"
-                android:startColor="#7B66FF"
-                android:centerColor="#5D84FF"
-                android:endColor="#39A7FF"
+            <corners android:radius="15dp" />
+            <gradient    android:type="sweep"
+                android:gradientRadius="100%p"    android:centerX="0.5"
+                android:centerY="0.5"    android:startColor="#7B66FF"
+                android:centerColor="#5D84FF"    android:endColor="#39A7FF"
                 android:angle="0" />
+
+
         </shape>
     </item>
     <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
         <shape android:shape="rectangle">
             <!-- Adjust the radius to control the roundness -->
-            <corners android:radius="22dp" />
+            <corners android:radius="14dp" />
             <!-- Transparent stroke color to hide the original stroke -->
             <solid android:color="@color/white"/>
         </shape>

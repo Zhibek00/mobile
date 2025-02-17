@@ -11,65 +11,87 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_height="match_parent"
 
         android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/bottom_rounded"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Hello,"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:layout_marginStart="20dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Aksaule"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/default_account_icon" />
+
+        </FrameLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="18dp"
-            android:textSize="28dp"
-            android:textStyle="bold"
-            android:text="Explore restaurants"/>
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_marginHorizontal="18dp"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/angular_color"
-            android:drawableStart="@drawable/search_drawable"
-            android:drawableEnd="@drawable/map_drawable"
-            android:ems="10"
-            android:tint="@color/white"
-            android:hint="Search..."
-            android:inputType="text" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginHorizontal="18dp"
             android:layout_marginVertical="20dp"
-            android:text="Recommendations"/>
+            android:text="Explore restaurants"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
         <TextView
-            android:layout_height="wrap_content"
+            android:id="@+id/search"
             android:layout_width="match_parent"
-            android:layout_marginTop="-18dp"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
             android:layout_marginHorizontal="18dp"
-            android:background="@drawable/line_3"
-            />
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:text="Search"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/search_drawable"
+            android:ems="10"
+            android:inputType="text"
+            android:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_banner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
             android:layout_marginTop="16dp"
-            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:orientation="horizontal" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_marginHorizontal="18dp"
-            android:background="@drawable/line_3"/>
+
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_recycle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
             android:layout_marginTop="10dp"
-            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layoutManager="LinearLayoutManager"
             android:orientation="horizontal"
             />
 
@@ -79,25 +101,26 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginHorizontal="18dp"
-            android:layout_marginVertical="18dp"
+            android:layout_marginTop="18dp"
             android:text="Available Now"/>
         <TextView
+            android:id="@+id/view_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:layout_marginHorizontal="18dp"
             android:layout_gravity="end"
-            android:layout_marginTop="-38dp"
-            android:layout_marginBottom="18dp"
+            android:layout_marginTop="-20dp"
             android:text="View All"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/restaurant_all_recycle"
-            android:layout_width="wrap_content"
-            app:layoutManager="LinearLayoutManager"
-
-            android:layout_marginHorizontal="18dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+             />
 
 
 

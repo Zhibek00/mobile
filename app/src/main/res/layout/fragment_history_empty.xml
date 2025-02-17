@@ -17,7 +17,7 @@
 
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/no_reservation_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_marginTop="54dp"
-            android:text="Place an order for delivery. Up-to-date orders will be displayed here." />
+            android:text="Once a table has been booked, the current bookings will appear here." />
 
 
     </FrameLayout>
@@ -48,7 +48,6 @@
         android:layout_marginTop="24dp"
         android:paddingHorizontal="30dp"
         android:background="@drawable/button_shape"
-        android:textColor="@color/purple"
         android:textSize="16sp"
         android:textStyle="bold"
         android:layout_gravity="center"

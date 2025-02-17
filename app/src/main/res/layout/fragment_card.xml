@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30dp"
+    tools:context=".fragments.CardFragment">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:text="Payment"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="27dp" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textSize="16dp"
+
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+
+        <EditText
+            android:id="@+id/card_number_edit"
+            android:textSize="16sp"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/payment_pr"
+            android:drawableTint="@color/grey_0"
+            android:drawablePadding="14dp"
+            android:paddingStart="24dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="0000 0000 0000 0000"
+            android:textColorHint="@color/grey_0"
+            android:background="@drawable/border_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Holder Name"
+        android:textSize="16dp"
+        android:layout_marginVertical="10dp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+
+        <EditText
+            android:id="@+id/card_name_edit"
+            android:textSize="16sp"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingStart="24dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="NAME SURNAME"
+            android:textColorHint="@color/grey_0"
+            android:background="@drawable/border_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expired Date"
+        android:layout_marginVertical="10dp"
+        android:textSize="16dp"
+
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="386dp" />
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVV"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="-30dp"
+        android:textSize="16dp"
+
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+        <EditText
+            android:id="@+id/date_edit"
+            android:textSize="16sp"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:paddingStart="24dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="mm/yy"
+            android:textColorHint="@color/grey_0"
+            android:background="@drawable/border_rounded"
+            android:layout_width="164dp"
+            android:layout_height="50dp" />
+
+
+
+    <EditText
+        android:id="@+id/cvv_edit"
+        android:textSize="16sp"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingStart="24dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:hint="cvv"
+        android:layout_gravity="end"
+        android:layout_marginTop="-50dp"
+        android:textColorHint="@color/grey_0"
+        android:background="@drawable/border_rounded"
+        android:layout_width="164dp"
+        android:layout_height="50dp" />
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+       />
+
+
+</LinearLayout>

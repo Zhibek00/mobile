@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/image_45"
-        android:bottom="8dp" /> <!-- Adjust the bottom padding as needed -->
-</layer-list>
